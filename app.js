@@ -32,13 +32,15 @@ const song = [
 //const number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 //numbers.forEach((song, index)=> console.log(song, index))
 
-song.forEach((song)=> console.log(song.Name));
+/* song.forEach((song)=> console.log(song.Name));
 song.forEach((song)=> console.log(song.Artist));
 song.forEach((song)=> console.log(song.Key));
-song.forEach((song)=> console.log(song.BPM));
+song.forEach((song)=> console.log(song.BPM)); */
 
  const BPM = song.filter((song) => song.BPM>120);
- console.log(BPM>120); 
+ console.log(BPM); 
+
+BPM.forEach((song)=> console.log(song.BPM));
 
 
 // const numbers is bc index starts at 0
