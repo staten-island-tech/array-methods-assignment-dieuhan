@@ -3,14 +3,16 @@ const song = [
  {  Name: "Golden", 
     Artist: "Harry Styles",
     Key: "E sharp minor",
-    BPM: "140"
+    BPM: "140",
+    Writers: ['1','2','3','4']
  },
 
  {
     Name: "Style",
     Artist: "Taylor Swift",
     Key: "D sharp major",
-    BPM: "95"
+    BPM: "95",
+    Writers: ['1','2','3']
  },
  
  {
@@ -18,6 +20,7 @@ const song = [
     Artist: "Olivia Rodrigo",
     Key: "A sharp major",
     BPM: "181",
+    Writers: ['1','2']
  },
 
  {
@@ -25,6 +28,8 @@ const song = [
    Artist: "Clairo",
    Key: "C sharp major",
    BPM: "105",
+   Writers: ['1']
+
  },
 
 ];
@@ -35,12 +40,16 @@ const song = [
 /* song.forEach((song)=> console.log(song.Name));
 song.forEach((song)=> console.log(song.Artist));
 song.forEach((song)=> console.log(song.Key));
-song.forEach((song)=> console.log(song.BPM)); */
-
+song.forEach((song)=> console.log(song.BPM)); 
+ */
  const BPM = song.filter((song) => song.BPM>120);
  console.log(BPM); 
-
 BPM.forEach((song)=> console.log(song.BPM));
+
+song.forEach((song)=> {
+song.Writers.forEach((anything)=> {
+   console.log(anything)
+})})
 
 
 // const numbers is bc index starts at 0
